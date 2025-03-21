@@ -107,7 +107,57 @@
           </table>
         </fieldset>
       </section>
-			
+
+      <section>
+        <fieldset>
+          <legend>Pomodoro Clock</legend>
+          <div id="break-label">
+            Break Length
+            <button id="break-decrement"><</button>
+            <span id="break-length"></span>
+            <button id="break-increment">></button>
+          </div>
+          <div id="session-label">
+            Session Length
+            <button id="session-decrement"><</button>
+            <span id="session-length"></span>
+            <button id="session-increment">></button>
+          </div>
+          <div id="timer-label">Session</div>
+          <div id="time-left"></div>
+          <button id="start_stop">Start/Stop</button>
+          <button id="reset">Reset</button>
+          <audio id="beep" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav" preload="auto"></audio>
+        </fieldset>
+      </section>
+
+      <section>
+        <fieldset>
+          <legend>JavaScript Calculator</legend>
+          <div id="calculator">
+            <button id="one" value="1" onclick="number('one')">1</button>
+            <button id="two" value="2" onclick="number('two')">2</button>
+            <button id="three" value="3" onclick="number('three')">3</button>
+            <button id="four" value="4" onclick="number('four')">4</button>
+            <button id="five" value="5" onclick="number('five')">5</button>
+            <button id="six" value="6" onclick="number('six')">6</button>
+            <button id="seven" value="7" onclick="number('seven')">7</button>
+            <button id="eight" value="8" onclick="number('eight')">8</button>
+            <button id="nine" value="9" onclick="number('nine')">9</button>
+            <button id="add" value="+" onclick="operator('add')">+</button>
+            <button id="zero" value="0" onclick="number('zero')">0</button>
+            <button id="subtract" value="-" onclick="operator('subtract')">-</button>
+            <button id="multiply" value="*" onclick="operator('multiply')">*</button>
+            <button id="divide" value="/" onclick="operator('divide')">/</button>
+            <button id="decimal" value="." onclick="number('decimal')">.</button>
+            <button id="equals" value="=" onclick="equal()">=</button>
+            <div></div>
+            <button id="clear">clear</button>
+          </div>
+          <p id="display">0</p>
+          <i class="fa-solid fa-bug">   Bug Exists</i>
+        </fieldset>
+      </section>
 		</main>
 
 		<footer>
@@ -121,5 +171,7 @@
     <script src="scripts/telephone-number-validator.js"></script>
     <script src="scripts/cash-register.js"></script>
     <script src="scripts/pokémon-search-app.js"></script>
+    <script src="scripts/pomodoro-clock.js"></script>
+    <script src="scripts/javascript-calculator.js"></script>
   </body>
 </html>

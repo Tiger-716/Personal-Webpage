@@ -120,6 +120,12 @@ i {
   display: none;
 }
 
+#calculator {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 150px 150px 150px;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: var(--black);
