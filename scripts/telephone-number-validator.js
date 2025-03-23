@@ -2,8 +2,6 @@ const userInput = document.getElementById("user-input");
 const validateBtn = document.getElementById("validate-btn");
 const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
-const test = document.getElementById("test");
-
 const pattern1 = /(?:^|\s)1\s[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9](?:$|\s)/;
 const pattern2 = /(?:^|\s)1\s?\([0-9][0-9][0-9]\)\s?[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9](?:$|\s)/;
 const pattern3 = /(?:^|\s)1\s[0-9][0-9][0-9]\s[0-9][0-9][0-9]\s[0-9][0-9][0-9][0-9](?:$|\s)/;
@@ -31,6 +29,5 @@ function clearInput() {
   result.innerText = "";
 }
 
-validateBtn.addEventListener("click", (e) => {showAlert(); e.preventDefault()});
+validateBtn.addEventListener("click", (e) => {showAlert(); e.preventDefault();});
 clearBtn.addEventListener("click", clearInput);
-test.addEventListener("click", () => {result.innerHTML = "the script is working"})
