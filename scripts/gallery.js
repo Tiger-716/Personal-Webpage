@@ -1,4 +1,4 @@
-let imgIndex = 1;
+let imgIndex = 4;
 showImg(imgIndex);
 
 function plusImg(n) {
