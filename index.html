@@ -23,18 +23,48 @@
           </div>
         </div>
       </nav>
-      <div>
-        <a id="switch" href="casual.html">CASUAL</a>
-      </div>
     </header>
 
     <main>
       <section id="welcome-section">
         <h1>Welcome to my website!</h1>
-      </section>
-      <section id="projects">
-        <h2 class="project-tile">blahblahblah</h2>
-        <a id="profile-link" herf="">this is a link</a>
+        <div id="img-container">
+          <div class="myImgs fade">
+            <div class="numtext">1 / 6</div>
+            <img src="images/1.jpg" width="25%">
+          </div>
+          <div class="myImgs fade">
+            <div class="numtext">2 / 6</div>
+            <img src="images/2.jpg" width="25%">
+          </div>
+          <div class="myImgs fade">
+            <div class="numtext">3 / 6</div>
+            <img src="images/3.jpg" width="25%">
+          </div>
+          <div class="myImgs fade">
+            <div class="numtext">4 / 6</div>
+            <img src="images/4.jpg" width="25%">
+          </div>
+          <div class="myImgs fade">
+            <div class="numtext">5 / 6</div>
+            <img src="images/5.jpg" width="25%">
+          </div>
+          <div class="myImgs fade">
+            <div class="numtext">6 / 6</div>
+            <img src="images/6.jpg" width="25%">
+          </div>
+          <a id="prev" onclick="plusImg(-1)"><</a>
+          <a id="next" onclick="plusImg(1)">></a>
+        </div>
+        <br>
+        <div id="dots-selector">
+          <span class="dot" onclick="currentImg(1)"></span>
+          <span class="dot" onclick="currentImg(2)"></span>
+          <span class="dot" onclick="currentImg(3)"></span>
+          <span class="dot" onclick="currentImg(4)"></span>
+          <span class="dot" onclick="currentImg(5)"></span>
+          <span class="dot" onclick="currentImg(6)"></span>
+        </div>
       </section>
     </main>
 
@@ -43,5 +73,7 @@
       <a href="https://github.com/Tiger-716" target="_blank"><i class="fa-brands fa-square-github"></i></a>
       <a href="mailto:tigerluo716@gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </footer>
+
+    <script src="scripts/gallery.js"></script>
   </body>
 </html>
