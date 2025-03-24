@@ -29,4 +29,4 @@ function isPalindrome() {
   }
 }
 
-checkButton.addEventListener("click", (e) => {isPalindrome(); e.preventDefault()});
+checkButton.addEventListener("click", (e) => {e.preventDefault(); isPalindrome()});
