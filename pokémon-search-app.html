@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Personal Portfolio Webpage</title>
     <script src="https://kit.fontawesome.com/b138ab1a4d.js" crossorigin="anonymous"></script>
   </head>
@@ -31,11 +31,42 @@
     <main>
       <section>
         <fieldset>
-          <legend>Roman Numeral Converter</legend>
-          <input id="number" type="number" />
-          <button id="convert-btn">Convert</button>
+          <legend>Pokémon Search App</legend>
+          <input id="search-input" required>
+          <button id="search-button">search</button>
+          <h2 id="pokemon-name"></h2>
+          <h3 id="pokemon-id"></h3>
+          <div id="weight"></div>
+          <div id="height"></div>
+          <div id="img"></div>
+          <div id="types"></div>
+          <table id="spec" class="hide">
+            <tr>
+              <td>HP:</td>
+              <td id="hp"></td>
+            </tr>
+            <tr>
+              <td>Attack:</td>
+              <td id="attack"></td>
+            </tr>
+            <tr>
+              <td>Defense:</td>
+              <td id="defense"></td>
+            </tr>
+            <tr>
+              <td>Special Attack:</td>
+              <td id="special-attack"></td>
+            </tr>
+            <tr>
+              <td>Special Defense:</td>
+              <td id="special-defense"></td>
+            </tr>
+            <tr>
+              <td>Speed:</td>
+              <td id="speed"></td>
+            </tr>
+          </table>
         </fieldset>
-        <p id="output"></p>
       </section>
     </main>
 
@@ -44,6 +75,6 @@
       <a href="https://github.com/Tiger-716" target="_blank"><i class="fa-brands fa-square-github"></i></a>
       <a href="mailto:tigerluo716@gmail.com"><i class="fa-solid fa-envelope"></i></a>
     </footer>
-    <script src="/scripts/roman-numeral-converter.js"></script>
+    <script src="/scripts/pokémon-search-app.js"></script>
   </body>
 </html>
