@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Personal Portfolio Webpage</title>
+    <script src="https://kit.fontawesome.com/b138ab1a4d.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <a id="icon" href="index.html">Junming</a>
+      <nav id="navbar">
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div id="dropdown-content">
+            <a class="menu" href="about.html">About Me</a>
+            <a class="menu" href="certificate.html">Certification</a>
+            <a class="menu" href="project.html">Project</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="img-container">
+        <div class="myImgs fade">
+          <div class="numtext">1 / 7</div>
+          <img src="images/1.jpg" width="25%">
+        </div>
+        <div class="myImgs fade">
+          <div class="numtext">2 / 7</div>
+          <img src="images/2.jpg" width="25%">
+        </div>
+        <div class="myImgs fade">
+          <div class="numtext">3 / 7</div>
+          <img src="images/3.jpg" width="25%">
+        </div>
+        <div class="myImgs fade">
+          <div class="numtext">4 / 7</div>
+          <img src="images/4.jpg" width="25%">
+        </div>
+        <div class="myImgs fade">
+          <div class="numtext">5 / 7</div>
+          <img src="images/5.jpg" width="25%">
+        </div>
+        <div class="myImgs fade">
+          <div class="numtext">6 / 7</div>
+          <img src="images/6.jpg" width="25%">
+        </div>
+        <div class="myImgs fade">
+          <div class="numtext">7 / 7</div>
+          <img src="images/7.jpg" width="25%">
+        </div>
+        <a id="prev" onclick="plusImg(-1)"><</a>
+        <a id="next" onclick="plusImg(1)">></a>
+      </div>
+      <br>
+      <div id="dots-selector">
+        <span class="dot" onclick="currentImg(1)"></span>
+        <span class="dot" onclick="currentImg(2)"></span>
+        <span class="dot" onclick="currentImg(3)"></span>
+        <span class="dot" onclick="currentImg(4)"></span>
+        <span class="dot" onclick="currentImg(5)"></span>
+        <span class="dot" onclick="currentImg(6)"></span>
+        <span class="dot" onclick="currentImg(7)"></span>
+      </div>
+    </main>
+
+    <footer>
+      <a href="https://linkedin.com/in/junming-luo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Tiger-716" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+      <a href="mailto:tigerluo716@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <div>© 2025 Junming Luo. All rights reserved.</div>
+    </footer>
+
+    <script src="scripts/slideshow.js"></script>
+  </body>
+</html>

@@ -10,75 +10,58 @@
 
   <body>
     <header>
-      <a id="icon" href="index.html">Junming</a>
-      <nav id="navbar">
-        <div class="dropdown">
-          <button class="dropdown-btn">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <div id="dropdown-content">
-            <a class="menu" href="about.html">About Me</a>
-            <a class="menu" href="certificate.html">Certification</a>
-            <a class="menu" href="project.html">Project</a>
-          </div>
-        </div>
+      <div id="icon">
+        <a href="index.html">Junming</a>
+      </div>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#certificate">Certification</a>
+        <a href="#project">Project</a>
       </nav>
     </header>
 
     <main>
-      <section id="welcome-section">
-        <h1>Welcome to my website!</h1>
-        <h2>You can know me better and find out more about me!</h2>
-        <div id="img-container">
-          <div class="myImgs fade">
-            <div class="numtext">1 / 7</div>
-            <img src="images/1.jpg" width="25%">
-          </div>
-          <div class="myImgs fade">
-            <div class="numtext">2 / 7</div>
-            <img src="images/2.jpg" width="25%">
-          </div>
-          <div class="myImgs fade">
-            <div class="numtext">3 / 7</div>
-            <img src="images/3.jpg" width="25%">
-          </div>
-          <div class="myImgs fade">
-            <div class="numtext">4 / 7</div>
-            <img src="images/4.jpg" width="25%">
-          </div>
-          <div class="myImgs fade">
-            <div class="numtext">5 / 7</div>
-            <img src="images/5.jpg" width="25%">
-          </div>
-          <div class="myImgs fade">
-            <div class="numtext">6 / 7</div>
-            <img src="images/6.jpg" width="25%">
-          </div>
-          <div class="myImgs fade">
-            <div class="numtext">7 / 7</div>
-            <img src="images/7.jpg" width="25%">
-          </div>
-          <a id="prev" onclick="plusImg(-1)"><</a>
-          <a id="next" onclick="plusImg(1)">></a>
-        </div>
-        <br>
-        <div id="dots-selector">
-          <span class="dot" onclick="currentImg(1)"></span>
-          <span class="dot" onclick="currentImg(2)"></span>
-          <span class="dot" onclick="currentImg(3)"></span>
-          <span class="dot" onclick="currentImg(4)"></span>
-          <span class="dot" onclick="currentImg(5)"></span>
-          <span class="dot" onclick="currentImg(6)"></span>
-          <span class="dot" onclick="currentImg(7)"></span>
+      <section>
+        <h1>Welcome to My Personal Website</h1>
+        <p>I'm a passionate software engineer, ready to make an impact!</p>
+      </section>
+      <section id="about">
+        <h1>About Me</h1>
+        <img id="graduation-img" src="images/7.jpg">
+        <p>I am a recent graduate from the University of Sheffield with a degree in Computer Science. 
+          Throughout my academic journey, I developed a strong foundation in programming, problem-solving, 
+          and data analysis, while honing my ability to work collaboratively in team settings. 
+          I pride myself on being punctual, reliable, and dedicated to delivering high-quality results. 
+          My strong communication skills and respectful approach to teamwork allow me to foster positive 
+          relationships and contribute effectively in any professional environment. I'm eager to bring my 
+          skills and enthusiasm to a dynamic role where I can continue to grow and make meaningful contributions.</p>
+          
+      </section>
+
+      <section id="certificate">
+        <h1>Certificate</h1>
+      </section>
+
+      <section id="project">
+        <h1>Project</h1>
+        <div id="grid-container">
+          <a href="palindrome-checker.html"><div class="project">Palindrome Checker</div></a>
+          <a href="roman-numeral-converter.html"><div class="project">Roman Numeral Converter</div></a>
+          <a href="telephone-number-validator.html"><div class="project">Telephone Number Validator</div></a>
+          <a href=""><div class="project">Cash Register</div></a>
+          <a href="pokémon-search-app.html"><div class="project">Pokémon Search App</div></a>
+          <a href="pomodoro-clock.html"><div class="project">Pomodoro Clock</div></a>
+          <a href="javascript-calculator.html"><div class="project">JavaScript Calculator</div></a>
+          <a href="slideshow.html"><div class="project">Slideshow</div></a>
         </div>
       </section>
     </main>
 
     <footer>
-      <span>Junming Luo</span>
       <a href="https://linkedin.com/in/junming-luo" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       <a href="https://github.com/Tiger-716" target="_blank"><i class="fa-brands fa-square-github"></i></a>
       <a href="mailto:tigerluo716@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <div>© 2025 Junming Luo. All rights reserved.</div>
     </footer>
 
     <script src="scripts/gallery.js"></script>
