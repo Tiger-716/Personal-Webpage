@@ -11,6 +11,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -119,10 +120,9 @@ header a, header a:visited {
 
 section > #grid-container {
   display: grid;
-  gap: 30px;
-  margin: auto;
+  gap: 10px;
   grid-template-columns: auto auto auto;
-  padding: 10px;
+  padding: 5px 0;
 }
 
 #grid-container > a > .project {
@@ -269,20 +269,6 @@ img {
   margin-right: 15px;
 }
 
-#switch {
-  float: right;
-  border: none;
-  background-color: var(--darkbrown);
-  color: var(--peachycream);
-  font-size: 10px;
-}
-
-#grad-cert {
-  width: 33.33%;
-  display: block;
-  margin: auto;
-}
-
 .hide {
   display: none;
 }
@@ -293,8 +279,20 @@ img {
   grid-template-columns: 150px 150px 150px;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
   body {
     /* background-color: black; */
+  }
+
+  .column {
+    padding: 0;
+  }
+  
+  #certificate-wall {
+    width: 90vw;
+  }
+
+  #project {
+    font-size: 10px;
   }
 }
