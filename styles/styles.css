@@ -15,8 +15,8 @@
 
 body {
   position: relative;
+  width: 100vw;
   background-color: var(--peachycream);
-  min-height: 100vh;
 }
 
 header {
@@ -293,8 +293,8 @@ img {
   grid-template-columns: 150px 150px 150px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) {
   body {
-    background-color: var(--black);
+    /* background-color: black; */
   }
 }
