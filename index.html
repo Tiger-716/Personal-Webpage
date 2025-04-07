@@ -29,13 +29,13 @@
       <section id="about">
         <h1>About Me</h1>
         <p>I am a recent graduate from the University of Sheffield with a degree in Computer Science. 
-          Throughout my academic journey, I developed a strong foundation in programming, problem-solving, 
+          <span id="hide" class="hide">Throughout my academic journey, I developed a strong foundation in programming, problem-solving, 
           and data analysis, while honing my ability to work collaboratively in team settings. 
           I pride myself on being punctual, reliable, and dedicated to delivering high-quality results. 
           My strong communication skills and respectful approach to teamwork allow me to foster positive 
           relationships and contribute effectively in any professional environment. I'm eager to bring my 
-          skills and enthusiasm to a dynamic role where I can continue to grow and make meaningful contributions.</p>
-        <i class="fa-solid fa-ellipsis"></i>
+          skills and enthusiasm to a dynamic role where I can continue to grow and make meaningful contributions.</span></p>
+        <i class="fa-solid fa-ellipsis" onclick="toggle()"></i>
         <img id="graduation-img" src="images/7.jpg">
       </section>
 
@@ -76,6 +76,17 @@
       <div>© 2025 Junming Luo. All rights reserved.</div>
     </footer>
 
+    <script>
+      function toggle() {
+        const text = document.getElementById("hide");
+        if (text.style.display === "none") {
+          text.style.display = "block"
+        }
+        else {
+          text.style.display = "none"
+        }
+      }
+    </script>
     <script src="scripts/gallery.js"></script>
   </body>
 </html>

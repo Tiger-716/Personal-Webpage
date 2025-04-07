@@ -20,19 +20,19 @@ body {
   background-color: var(--peachycream);
 }
 
+main {
+  padding: 15px 0;
+}
+
 header {
   width: 100%;
   height: 120px;
   background-color: var(--darkbrown);
 }
 
-main {
-  padding: 3rem 0;
-}
-
 #welcome, #about, #project, #certificate {
   text-align: center;
-  padding: 0 20px 50px 20px;
+  padding: 10px 20px 25px 20px;
 }
 
 footer {
@@ -81,6 +81,10 @@ header a, header a:visited {
   color: var(--peachycream);
 }
 
+.hide {
+  display: none; /* hide partial of the about me */
+}
+
 #graduation-img {
   display: block;
   justify-content: center;
@@ -89,23 +93,15 @@ header a, header a:visited {
 }
 
 #certificate-wall {
-  display: block;
-  margin: auto;
   border: 5px solid black;
   border-style: double;
   border-radius: 5%;
   padding: 30px;
-  width: 70%;
 }
 
 .column {
   float: left;
   width: 50%;
-  padding: 10px;
-}
-
-.column img {
-  margin-top: 1px;
 }
 
 .row:after {
@@ -114,14 +110,9 @@ header a, header a:visited {
   clear: both;
 }
 
-/* end of index */
-
-/* project */
-
 section > #grid-container {
   display: grid;
   gap: 10px;
-  grid-template-columns: auto auto auto;
   padding: 5px 0;
 }
 
@@ -133,6 +124,10 @@ section > #grid-container {
   padding: 20px;
 }
 
+#grid-container > a {
+  display: block;
+}
+
 #grid-container > a, #grid-container > a:visited {
   text-decoration: none;
   color: purple;
@@ -141,6 +136,43 @@ section > #grid-container {
 .project:hover {
   font-weight: bold;
   color: var(--blue);
+  background-color: #50505050;
+}
+
+/* end of index */
+
+/* project */
+
+#calculator {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+fieldset > #display {
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+#palindrome-text {
+  text-align: center;
+  margin: 10px;
+}
+
+#text-input {
+  display: block;
+  margin: auto;
+}
+
+.check-btn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.result {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0 10px 0;
 }
 
 /* end of project */
@@ -269,30 +301,10 @@ img {
   margin-right: 15px;
 }
 
-.hide {
-  display: none;
-}
-
-#calculator {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 150px 150px 150px;
-}
-
-@media only screen and (max-width: 320px) {
-  body {
-    /* background-color: black; */
-  }
+@media only screen and (max-width: 375px) {
 
   .column {
     padding: 0;
   }
-  
-  #certificate-wall {
-    width: 90vw;
-  }
 
-  #project {
-    font-size: 10px;
-  }
 }
