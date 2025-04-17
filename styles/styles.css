@@ -7,6 +7,24 @@
   --peachycream-a: #fff1de80;
   --deepgreen: #056608;
   --blue: #00bcd4;
+  --normal: #aaaa9a;
+  --fire: #fe4424;
+  --water: #3599fc;
+  --electric: #ffcc43;
+  --grass: #79cc5e;
+  --ice: #68ccfe;
+  --fighting: #ba5545;
+  --poison: #a95597;
+  --ground: #ddbb5c;
+  --flying: #8899fc;
+  --psychic: #fe5597;
+  --bug: #abbb34;
+  --rock: #bbaa6a;
+  --ghost: #6666b9;
+  --dragon: #7767eb;
+  --dark: #775545;
+  --steel: #aaaabb;
+  --fairy: #ed99ec;
 }
 
 * {
@@ -36,7 +54,7 @@ header {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -82,7 +100,7 @@ header a, header a:visited {
 }
 
 .hide {
-  display: none; /* hide partial of the about me */
+  display: none;
 }
 
 #graduation-img {
@@ -154,7 +172,7 @@ fieldset > #display {
   padding: 30px 0;
 }
 
-#palindrome-text {
+#fieldset-text {
   text-align: center;
   margin: 10px;
 }
@@ -176,6 +194,100 @@ fieldset > #display {
 }
 
 /* end of project */
+
+/* pokemon search app */
+
+#pokemon-img {
+  display: none;
+  margin: 20px auto;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 250px;
+}
+
+#types {
+  margin: 10px 0;
+}
+
+.types {
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+#normal {
+  background-color: var(--normal);
+}
+
+#fire {
+  background-color: var(--fire);
+}
+
+#water {
+  background-color: var(--water);
+}
+
+#electric {
+  background-color: var(--electric);
+}
+
+#grass {
+  background-color: var(--grass);
+}
+
+#ice {
+  background-color: var(--ice);
+}
+
+#fighting {
+  background-color: var(--fighting);
+}
+
+#poison {
+  background-color: var(--poison);
+}
+
+#ground {
+  background-color: var(--ground);
+}
+
+#flying {
+  background-color: var(--flying);
+}
+
+#psychic {
+  background-color: var(--psychic);
+}
+
+#bug {
+  background-color: var(--bug);
+}
+
+#rock {
+  background-color: var(--rock);
+}
+
+#ghost {
+  background-color: var(--ghost);
+}
+
+#dragon {
+  background-color: var(--dragon);
+}
+
+#dark {
+  background-color: var(--dark);
+}
+
+#steel {
+  background-color: var(--steel);
+}
+
+#fairy {
+  background-color: var(--fairy);
+}
+
+/* end of pokemon search app */
 
 /* slideshow */
 

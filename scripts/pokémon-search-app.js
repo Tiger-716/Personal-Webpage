@@ -5,7 +5,7 @@ const idText = document.getElementById("pokemon-id");
 const weightText = document.getElementById("weight");
 const heightText = document.getElementById("height");
 const typesText = document.getElementById("types");
-const pokemonImg = document.getElementById("img");
+const pokemonImg = document.getElementById("pokemon-img");
 const hpText = document.getElementById("hp");
 const attackText = document.getElementById("attack");
 const defenseText = document.getElementById("defense");
@@ -41,7 +41,9 @@ const searchPokemon = () => {
     .then((pokemon) => {pokemonStats = pokemon.stats;
       pokemonTypes = pokemon.types;
       imgUrl = pokemon.sprites.front_default;
-      pokemonTypes.forEach(({type}) => {typesText.innerHTML += `<element class="types">${type.name.toUpperCase()}</element>`});
+      pokemonTypes.forEach(({type}) => {
+        typesText.innerHTML += `<element id="${type.name}" class="types">${type.name.toUpperCase()}</element>`;
+      });
       nameText.innerHTML = `${pokemon.name.toUpperCase()}`;
       idText.innerHTML = `#${pokemon.id}`;
       weightText.innerHTML = `Weight: ${pokemon.weight}`;
@@ -53,11 +55,13 @@ const searchPokemon = () => {
       specialAttackText.innerHTML = `${pokemonStats[3].base_stat}`;
       specialDefenseText.innerHTML = `${pokemonStats[4].base_stat}`;
       speedText.innerHTML = `${pokemonStats[5].base_stat}`;
-      specText.classList.remove("hide");})
+      specText.classList.remove("hide");
+      pokemonImg.style.display = "block";})
     .catch((err) => {
       alert("Pokémon not found");
       console.log(err);
     });
+  
 }
 
 searchBtn.addEventListener("click", searchPokemon);
